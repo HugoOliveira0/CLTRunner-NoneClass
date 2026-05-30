@@ -30,6 +30,7 @@
   },
   "name":"CLTRunner-NoneClass",
   "resources":[
+    {"id":{"name":"obj_game_control","path":"objects/obj_game_control/obj_game_control.yy",},},
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"id":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},
     {"id":{"name":"snd_coletavel","path":"sounds/snd_coletavel/snd_coletavel.yy",},},
