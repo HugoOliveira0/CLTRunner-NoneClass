@@ -1,6 +1,3 @@
-// Ramdomizando
-randomize();
-
 // Criando uma variável para saber o id do Background
 back_id = layer_background_get_id("Background");
 
