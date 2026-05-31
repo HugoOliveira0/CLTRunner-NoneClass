@@ -4,7 +4,7 @@ var _tempo = irandom_range(2, 3)
 
 // Definir o lado e criar uma var para o coletavel
 var _lado = choose(lado_esq, lado_dir);
-var _clt = instance_create_layer(_lado, -50, "Instances", obj_clt )
+var _clt = instance_create_layer(_lado, -64, "Instances", obj_clt )
 
 _clt.vspeed = 1;
 
