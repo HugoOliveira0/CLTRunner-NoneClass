@@ -18,3 +18,15 @@ if (room == rm_inicio)
 }
 
 #endregion
+
+#region Jogo
+	
+if (room == rm_jogo)
+{
+	layer_vspeed(lay_id, global.vel);
+	global.vel += global.vel_increment;
+}
+	
+#endregion
+
+show_debug_message(layer_get_vspeed(lay_id))
