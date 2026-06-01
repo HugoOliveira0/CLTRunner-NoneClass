@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_coletavel.wav",
-  "volume":0.3,
+  "volume":0.5,
 }
