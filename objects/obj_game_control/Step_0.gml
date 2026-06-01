@@ -25,8 +25,14 @@ if (room == rm_jogo)
 {
 	layer_vspeed(lay_id, global.vel);
 	global.vel += global.vel_increment;
+	
+	frames_count += 1;
+	
+	if (frames_count >= game_get_speed(gamespeed_fps))
+	{
+		global.tempo_sem_clt++;
+		frames_count = 0;
+	}
 }
 	
 #endregion
-
-show_debug_message(layer_get_vspeed(lay_id))

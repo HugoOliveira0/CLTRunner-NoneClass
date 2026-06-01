@@ -26,7 +26,13 @@ with (_clt)
 	{
 		y -= 64;
 	}
+	
+	// Se nascer a menos de 40 pixels de OUTRA clt
+	if (distance_to_object(obj_clt) < 40)
+	{
+		instance_destroy();	
+	}
 }
 
-
+// Impedir que ao ficar muito rápido, fique injogável
 alarm[1] = max(_tempo_calculado, 30)

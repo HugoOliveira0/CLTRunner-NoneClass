@@ -34,4 +34,5 @@ with (_coletavel)
 	}
 }
 
+// Impedir que ao ficar muito rápido, fique injogável
 alarm[0] = max(_tempo_calculado, 30)
