@@ -15,5 +15,5 @@ if (room == rm_jogo)
 
 if (room == rm_game_over)
 {
-	alarm[0] = 60;
+	alarm[0] = 40;
 }	

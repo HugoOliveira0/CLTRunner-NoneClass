@@ -15,7 +15,25 @@ if (room == rm_inicio)
 	{
 		room_goto(rm_jogo);
 	}
+	
+	
+	// --- CLIQUE MOBILE ---
+	if (mouse_check_button_pressed(mb_left))
+	{
+		pagina_atual++;
+		
+		// Muda o background para o proximo index da imagem
+		layer_background_index(back_id, pagina_atual);
+	}
+	
+	// Verifica se a pagina atual é igual ou maior que total de páginas
+	if (pagina_atual >= total_paginas)
+	{
+		room_goto(rm_jogo);
+	}
+	
 }
+
 
 #endregion
 
