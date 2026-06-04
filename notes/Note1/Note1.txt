@@ -1,3 +1,7 @@
 Última coisa que estava fazendo:
 
-Hud do game
+Hud do game (+/- check), tipo, check, só tá ruim.
+
+Última coisa que estava fazendo:
+
+Tela de game_over

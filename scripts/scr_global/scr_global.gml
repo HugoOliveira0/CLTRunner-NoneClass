@@ -9,3 +9,7 @@ global.tempo_sem_clt = 0;
 
 // Coletáveis coletados
 global.coletados = 0;
+
+// Recordes
+global.tempo_sem_clt_max = 0;
+global.coletados_max = 0;

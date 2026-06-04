@@ -36,3 +36,21 @@ if (room == rm_jogo)
 }
 	
 #endregion
+
+#region Game Over
+
+if (room == rm_game_over)
+{
+	escala_atual += vel_alteracao * direcao;
+	
+	if (escala_atual >= tamanho_max)
+	{
+		direcao = -1;
+	}
+	if (escala_atual <= tamanho_min)
+	{
+		direcao = 1;	
+	}
+}
+
+#endregion
