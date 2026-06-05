@@ -29,7 +29,7 @@ if (room == rm_jogo)
 	
 	// Velocimetro
 	draw_set_halign(1);
-	draw_text(_largura_gui / 2, _altura_gui - 30, $"Velocidade: {global.vel / 120}");
+	draw_text(_largura_gui / 2, _altura_gui - 30, $"Velocidade: {global.vel}");
 	draw_set_halign(-1);
 }
 

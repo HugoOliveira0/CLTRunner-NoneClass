@@ -42,7 +42,7 @@ if (room == rm_inicio)
 if (room == rm_jogo)
 {
 	layer_vspeed(lay_id, global.vel);
-	global.vel += global.vel_increment;
+	global.vel *= 20;
 	
 	frames_count += 1;
 	
