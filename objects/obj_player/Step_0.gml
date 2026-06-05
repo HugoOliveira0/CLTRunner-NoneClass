@@ -13,7 +13,7 @@ else if(_dir < 0)
 	x_alvo = lado_esq;
 }
 
-x = lerp(x, x_alvo, 0.2);
+x = x_alvo
 
 #endregion
 
