@@ -22,20 +22,34 @@ x = lerp(x, x_alvo, 0.2);
 if (room == rm_jogo)
 {
 	var _largura_gui = display_get_gui_width(); // Pega a largura real da GUI
-	var _toque_x = device_mouse_x_to_gui(0)
+	//var _toque_x = device_mouse_x_to_gui(0)
 
 	if (mouse_check_button_pressed(mb_left))
 	{
-		if (_toque_x < _largura_gui / 2)	
+		clique = -clique
+		
+		switch(clique)
 		{
-			image_xscale = 1;
-			x_alvo = lado_esq;
+			case -1:
+				image_xscale = 1;
+				x_alvo = lado_esq;
+			break
+			case 1:
+				image_xscale = -1;
+				x_alvo = lado_dir;
+			break
 		}
-		else if (_toque_x > _largura_gui / 2)
-		{
-			image_xscale = -1;
-			x_alvo = lado_dir;	
-		}
+		
+		//if (_toque_x < _largura_gui / 2)	
+		//{
+		//	image_xscale = 1;
+		//	x_alvo = lado_esq;
+		//}
+		//else if (_toque_x > _largura_gui / 2)
+		//{
+		//	image_xscale = -1;
+		//	x_alvo = lado_dir;	
+		//}
 		
 		x = lerp(x, x_alvo, 0.2);
 	}

@@ -86,7 +86,7 @@ if (room == rm_game_over)
 		_img_index = 1; 
 		
 		// E já aproveita para checar se ele clicou ENQUANTO está em cima
-		if (device_mouse_check_button_pressed(0, mb_left))
+		if (device_mouse_check_button_released(0, mb_left))
 		{
 			global.tempo_sem_clt = 0;
 			global.coletados = 0;
